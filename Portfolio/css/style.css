@@ -112,7 +112,7 @@ header{
     background-color: #16162d;
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
-    transition: all 650ms cubic-bezier(1,0,0,1);
+    transition: all 650ms cubic-bezier(1,0,0, 1);
 }
 
 .nav-list{
