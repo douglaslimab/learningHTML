@@ -1,0 +1,36 @@
+/*start global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #252627;
+    background-size: cover;
+}
+/*end global*/
+
+/*start reusable*/
+/*end reusable*/
+
+/*start header*/
+/*end header*/
+
+/*start main*/
+
+.profile-img{
+    width: 50rem;
+    flex: 1;
+    margin-right: 5rem;
+}
+/*end main*/
+
+/*start footer*/
+/*end footer*/
