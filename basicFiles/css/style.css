@@ -33,7 +33,10 @@ ul{
     list-style: none;
     text-transform: uppercase;
 }
-
+li{
+    display: inline;
+    margin-right: 10px;
+}
 section{
     background-color:cadetblue;
     height: 100vh;
