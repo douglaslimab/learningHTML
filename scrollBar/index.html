@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <section>
+        <h2>Creative Scroll Progress Bar</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quia beatae explicabo minima maiores eaque animi vero perferendis! Adipisci, consectetur alias quisquam quis minima quaerat eveniet fuga placeat quae Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia quisquam quia tenetur, amet eius atque quas corrupti! Labore recusandae in impedit, dignissimos ipsam distinctio! Itaque eos quisquam cupiditate beatae!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit cupiditate voluptatum praesentium debitis voluptate labore nobis ipsa quia, ducimus ratione dolore dicta natus provident quos fuga eligendi quis aperiam soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione excepturi ab, tempore obcaecati reprehenderit optio earum quis perspiciatis repellendus neque ipsa voluptas quos odio repudiandae aut. Nisi aspernatur numquam architecto.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi ex amet nulla ab velit. Magnam ducimus omnis corporis vitae. Cum expedita aperiam suscipit unde consequatur fugit iure maiores natus maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facilis, alias quod quam soluta consequatur voluptates velit facere dolorum? Obcaecati nemo ad voluptatem? Repellat vel alias doloremque autem, totam vero.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dignissimos ratione eos accusantium voluptate ullam at officia quasi nulla tenetur laboriosam quae, minus exercitationem provident, voluptatem impedit, expedita velit voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ad velit exercitationem voluptatem? Ab suscipit impedit mollitia aperiam eius vitae nihil cumque tenetur enim molestiae. Veritatis provident modi nesciunt voluptas?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam corporis deserunt, commodi illo neque voluptas illum blanditiis dolorem quisquam modi, doloribus cum repudiandae ipsa recusandae cumque porro ratione mollitia in? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto tempore nobis, numquam nam distinctio quam. Accusantium ex quia dolore dicta nulla? Soluta accusantium assumenda laboriosam maiores atque porro nulla repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dicta ullam magni amet architecto. Repudiandae possimus ad ratione, sequi in quae, eos unde necessitatibus consequuntur nesciunt ipsum, aliquid ea eius? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quia est aliquid voluptates ex, architecto nostrum, rerum voluptatum illo quis beatae cumque eum. Molestias porro vero accusamus voluptatum sequi quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, porro, voluptatum, accusamus doloribus vel sapiente quam magni quasi eius odit eum. Nemo reiciendis maiores sequi placeat dicta! Amet, nam ipsum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti pariatur, dolores vitae laborum expedita consectetur cum dolor voluptatem omnis sequi nesciunt quasi autem blanditiis similique doloribus temporibus. Amet, est odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, minus quasi. Sint quo harum alias quod dolorum, voluptas maiores dolores totam tempore. Repellat culpa consequatur nobis voluptatem doloremque aut nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero quas veritatis hic tempore, incidunt vitae et magni praesentium exercitationem odio nulla est esse autem ullam rem rerum corporis quisquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique harum placeat, culpa id saepe officiis! Nulla, corrupti consequuntur? Temporibus laudantium praesentium numquam blanditiis? Qui consectetur eum quasi ad at tenetur?</p>
+    </section>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+</body>
+</html>
