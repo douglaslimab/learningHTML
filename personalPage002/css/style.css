@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+html{
+    background-color: #252627;
+}
+
+li{
+    display: inline-flex;
+    padding: 5px;
+}
+
+a{
+    text-transform: uppercase;
+}
+
+nav,
+.main,
+.grid-item,
+footer{
+    background-color: #662f2f;
+    margin-top: 20px;
+    padding: 10px 0px 5px 0px;
+    grid-auto-rows: max-content;
+}
+
+.main,
+.grid-item{
+    height: 100px;
+}
