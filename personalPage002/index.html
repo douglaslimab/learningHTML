@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Douglas Lima</title>
 </head>
@@ -14,30 +15,40 @@
         </header>
         <nav>
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">music</a></li>
-                <li><a href="#">technology</a></li>
-                <li><a href="#">triathlon</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#main">home</a></li>
+                <li><a href="#main">about</a></li>
+                <li><a href="#music">music</a></li>
+                <li><a href="#technology">technology</a></li>
+                <li><a href="#triathlon">triathlon</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
         <div class="main">
-            <h1>about me</h1>
+            <div class="main-container">
+                <img src="img/profile-image.png" alt="profile">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam fuga, pariatur, adipisci labore laborum facilis impedit autem ducimus minima perspiciatis vel. Obcaecati rem est dicta, quia nulla reprehenderit reiciendis!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit velit odit alias, vitae ipsam ex modi. In a iure nemo qui explicabo amet soluta nihil placeat, nam, est voluptas.</p>
+            </div>
         </div>
+
         <div class="subjects">
-            <ul>
-                <li><div class="grid-item music">
-                    <h1>music</h1>
-                </div></li>
-                <li><div class="grid-item technology">
-                    <h1>technology</h1>
-                </div></li>
-                <li><div class="grid-item triathlon">
-                    <h1>triathlon</h1>
-                </div></li>
-            </ul>
+            <div class="grid-item music" id="music">
+                <h1>music</h1>
+            </div>
+            <div class="grid-item technology" id="technology">
+                <h1>technology</h1>
+            </div>
+            <div class="grid-item triathlon" id="triathlon">
+                <h1>triathlon</h1>
+            </div>
         </div>
+
+        <div class="contact">
+            <form action="">
+                
+            </form>
+        </div>
+
         <footer>
             <p>&copy Copyright 2021</p>
         </footer>
