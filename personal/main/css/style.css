@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0a090b;
+    color: #ffeedb;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tri,
+.mecha,
+.music{
+    max-width: 90%;
+    background-color: #63030f;
+    padding: 50px;
+    position: relative;
+}
