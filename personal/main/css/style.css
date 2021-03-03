@@ -2,24 +2,119 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: consolas;
 }
 
 body{
-    background-color: #0a090b;
-    color: #ffeedb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #090a0b;
 }
 
 .main{
+    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
-.tri,
-.mecha,
-.music{
-    max-width: 90%;
-    background-color: #63030f;
-    padding: 50px;
+.main .box{
     position: relative;
+    width: 320px;
+    height: 400px;
+    color: #ffeedb;
+    background-color: #63030f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+
+.main .box:hover{
+    transform: translateY(-20px);
+}
+
+.main .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffff00, #ff0000);
+}
+
+.main .box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffff00, #ff0000);
+    filter: blur(30px);
+}
+
+.main .box:nth-child(2)::before,
+.main .box:nth-child(2)::after{
+    background: linear-gradient(45deg, #818181, #0000ff);    
+}
+.main .box:nth-child(3)::before,
+.main .box:nth-child(3)::after{
+    background: linear-gradient(45deg, #ffffff, #ff9100);    
+}
+
+.main .box span{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.main .box span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.main .box .section-content{
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+
+.main .box .section-content h2{
+    font-size: 2em;
+    color: #ffeedb;
+    margin-bottom: 10px;
+}
+
+.main .box .section-content p{
+    font-size: 1.1em;
+    color: #ffeedb;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.main .box .section-content a{
+    display: inline-block;
+    font-size: 1.1em;
+    color: #090a0b;
+    background: #ffeedb;
+    padding: 10px;
+    text-decoration: none;
+    font-weight:700;
 }
