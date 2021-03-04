@@ -4,34 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Douglas Lima</title>
 </head>
 <body>
-    <div class="main">
-        <div class="box">
+    <header>
+        <img class="logo" src="img/logo.png" alt="logo">
+        <nav>
+            <ul class="navbar">
+                <li><a href="#main">Home</a></li>
+                <li><a href="#mechatronics">Mechatronics</a></li>
+                <li><a href="#triathlon">Triathlon</a></li>
+                <li><a href="#music">Music</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about">
+        <div class="text-area">
+            <div class="im-doug">
+                <h1>
+                    <span>H</span>
+                    <span class="m-left">i</span>
+                    <span class="m-left">,</span>
+                    <br>
+                    <span>I</span>
+                    <span class="m-left">'</span>
+                    <span class="m-left">m</span>
+                    <span class="name">D</span>
+                    <span class="m-left name">o</span>
+                    <span class="m-left name">u</span>
+                    <span class="m-left name">g</span>
+                    <span class="m-left name">l</span>
+                    <span class="m-left name">a</span>
+                    <span class="m-left name">s</span>
+                </h1>
+            </div>
+            <div class="social-media">
+                <a href="#contact">contact me</a>
+                <a href="https://www.linkedin.com/in/douglas-lima-8800243a/" target="_blank" class="icon-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/douglaslimab" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="img/profile.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="main" id="home">
+        <div class="box tri">
             <span></span>
             <div class="section-content">
                 <h2>Triathlon</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur odio quis, rem sed quos laborum hic ipsam laboriosam doloribus, animi iste accusantium maxime quaerat totam alias ipsum cupiditate voluptatibus.</p>
-                <a href="#">Read More</a>
+                <p>As an amatuer triathlete, I have been running several Half Marathons and short Triathlon distances in the last years. In 2017 I ran my first Half Ironman distance in a competition called Cabra da Peste which is taken place anually in Fortaleza, the city where I was born. Since then I finished 3 Ironman 70.3 and a few more competitions with the same distance. In 2018 I ran my first Ultra Marathon in a race called Desafio 50K. Lately I have been aiming Marathons, my last one was Athens Authentic Marathon.</p>
+                <a href="#">Go to the site</a>
             </div>
         </div>
-        <div class="box">
+        <div class="box mecha" id="mechatronics">
             <span></span>
             <div class="section-content">
                 <h2>Mechatronics</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur odio quis, rem sed quos laborum hic ipsam laboriosam doloribus, animi iste accusantium maxime quaerat totam alias ipsum cupiditate voluptatibus.</p>
-                <a href="#">Read More</a>
+                <p>Qualified in Mechatronics and Electrotechnics. I am constantly learning about new technologies and improving my skills to develop my personal projects in Automation, Robotics and IoT. My newest project is an autonomous robot produced by a 3D printer which I call miniAGV. This project have been developed by me in those fields 3D Desgin, Electronics, the Control System and the Software. This robot is an inspiration from my final project in my degree, when I developed a prototype of and AGV (Automated Guided Vehicle), but a robust one made of aluminium and in industrial dimensions.</p>
+                <a href="#">Go to the site</a>
             </div>
         </div>
-        <div class="box">
+        <div class="box music" id="music">
             <span></span>
             <div class="section-content">
                 <h2>Music</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tenetur odio quis, rem sed quos laborum hic ipsam laboriosam doloribus, animi iste accusantium maxime quaerat totam alias ipsum cupiditate voluptatibus.</p>
-                <a href="#">Read More</a>
+                <a href="#">Go to the site</a>
             </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="box">
+            <span></span>
+            <div class="contact-box">
+                <h2>Get in touch</h2>
+                <p>Please send me a feed back</p>
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="text" placeholder="Your email">
+                <input type="text" placeholder="douglaslimab@gmail.com" disabled>
+                <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="submit">
+            </form>
         </div>
     </div>
 </body>
