@@ -11,7 +11,8 @@ body{
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    background: #090a0b;
+    background: url("background.png") no-repeat center fixed;
+    background-size: cover;
     color: #ffeedb;
 }
 /* general */
@@ -19,7 +20,7 @@ body{
 
 /* header begin*/
 header{
-    background: linear-gradient(to right bottom, rgba(126, 126, 133, 0.8), rgba(25, 26, 27, 0.3));
+    background: linear-gradient(45deg, #161513, #0a090b);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -42,14 +43,16 @@ header{
 
 .navbar li a{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     color: #ffeedb;
     text-decoration: none;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 .navbar li a:hover{
-    color: #3c91e6;
+    color: #ff0000;
+    transition: all 0.3s;
+    filter:blur(1px)
 }
 /* header ending */
 
@@ -63,14 +66,15 @@ header{
 
 .image{
     margin-top: 50px;
-    height: 400px;
-    width: 400px;
+    margin-bottom: 50px;
+    height: 420px;
+    width: 420px;
     overflow: hidden;
     border-radius: 50%;
 }
 
 .image img{
-    width: 400px;
+    width: 420px;
     margin-top: -40%;
 }
 
@@ -84,10 +88,6 @@ header{
     flex-wrap: wrap;    
 }
 
-.im-doug{
-    margin-top: 20px;
-}
-
 .im-doug h1{
     color: #ffeedb;
     font-size: 2.5rem;
@@ -99,21 +99,28 @@ header{
 }
 
 .im-doug h1 span:hover{
-    color: #67ff39;
-    transition: all .5s;
+    color: #f8f832;
+    transition: all 0.3s;
+    filter:blur(1px)
 }
 
 .im-doug h1 span.name{
-    color: #440d0d;
+    color: #63030f;
 }
 
 .im-doug h1 span.name:hover{
-    color: #0d4416;
-    transition: all .5s;
+    color: #ff0000;
+    transition: all 0.3s;
+    filter:blur(1px)
 }
 
 .im-doug h1 span.m-left{
     margin-left: -10px;
+}
+
+.im-doug p{
+    font-size: 1.8rem;
+    color: #ffeedb;
 }
 
 .social-media a{
@@ -127,7 +134,7 @@ header{
     position: relative;
     top: 10px;
     overflow: hidden;
-    transition: .5s;
+    transition: 0.5s;
     display: inline-block;
 }
 
@@ -154,6 +161,7 @@ header{
 
 /*-----------core---------------------------*/
 .main{
+    height: fit-content;
     position: relative;
     display: flex;
     justify-content: center;
