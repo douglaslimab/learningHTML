@@ -272,6 +272,7 @@ header{
 .contact{
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 40px 0;
@@ -367,6 +368,18 @@ header{
 
 .contact .box .contact-box submit{
     width: 100px;
+}
+/*------contact------------------------------------------------------*/
+
+footer{
+    margin-top: 80px;
+}
+
+footer p{
+    text-align: center;
+    color: #ffeedb;
+    font-size: 1.2rem;
+    padding: 15px 0;
 }
 /*
 .contact{
