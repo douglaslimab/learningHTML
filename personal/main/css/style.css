@@ -342,6 +342,7 @@ header{
     position: relative;
     z-index: 10;
     padding: 20px 40px;
+    justify-content: center;
 }
 
 .contact .box .contact-box h2{
@@ -364,11 +365,30 @@ header{
     outline: none;
     color: #ffeedb;
     position: relative;
+    color: #090a0b;
 }
 
-.contact .box .contact-box submit{
-    width: 100px;
+.contact .box .contact-box button{
+    display: inline-block;
+    font-size: 1.1em;
+    color: #090a0b;
+    background: #ffeedb;
+    padding: 10px;
+    text-decoration: none;
+    font-weight:700;
 }
+
+/* social links*/
+.contact-box a{
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.contact-box a:hover{
+    color: #0000ff;
+}
+
 /*------contact------------------------------------------------------*/
 
 footer{
