@@ -194,7 +194,7 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #090a0b, #ff0000);
+    background: linear-gradient(45deg, #818181, #0000ff);   
 }
 
 .main .box::after{
@@ -204,13 +204,13 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #090a0b, #ff0000);
+    background: linear-gradient(45deg, #818181, #0000ff);   
     filter: blur(30px);
 }
 
 .main .box:nth-child(2)::before,
-.main .box:nth-child(2)::after{
-    background: linear-gradient(45deg, #818181, #0000ff);    
+.main .box:nth-child(2)::after{ 
+    background: linear-gradient(45deg, #090a0b, #ff0000);
 }
 .main .box:nth-child(3)::before,
 .main .box:nth-child(3)::after{
@@ -327,17 +327,6 @@ header{
     z-index: 2;
 }
 
-.contact .box span::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    pointer-events: none;
-}
-
 .contact .box .contact-box{
     position: relative;
     z-index: 10;
@@ -386,7 +375,12 @@ header{
 }
 
 .contact-box a:hover{
-    color: #0000ff;
+    color: #0a66c2;
+}
+
+.contact-box a:hover:nth-child(2),
+.contact-box a:hover:nth-child(5){
+    color: #24292e
 }
 
 /*------contact------------------------------------------------------*/
